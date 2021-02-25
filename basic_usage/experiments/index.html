@@ -1,0 +1,719 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/V2-64.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.2">
+    
+    
+      
+        <title>Experiments - Snowman</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1655a90d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#experiments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Snowman" class="md-header__button md-logo" aria-label="Snowman">
+      
+  <img src="../../assets/V2-128.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Snowman
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Experiments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Snowman" class="md-nav__button md-logo" aria-label="Snowman">
+      
+  <img src="../../assets/V2-128.png" alt="logo">
+
+    </a>
+    Snowman
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../showcase/main/" class="md-nav__link">
+        Showcase
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Basic usage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Basic usage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basic usage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matching_solutions/" class="md-nav__link">
+        Matching solutions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow/" class="md-nav__link">
+        Workflow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/" class="md-nav__link">
+        Datasets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Experiments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Experiments
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-experiment" class="md-nav__link">
+    Add an experiment
+  </a>
+  
+    <nav class="md-nav" aria-label="Add an experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upload-failed" class="md-nav__link">
+    Upload failed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selecting-experiments" class="md-nav__link">
+    Selecting experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-formats" class="md-nav__link">
+    Import formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Import formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pilot" class="md-nav__link">
+    Pilot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magellan" class="md-nav__link">
+    Magellan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigmod2021" class="md-nav__link">
+    Sigmod2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterer" class="md-nav__link">
+    ClusterER
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmark/" class="md-nav__link">
+        Benchmark
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Development setup
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development setup" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Development setup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_setup/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swagger" class="md-nav__link">
+        REST API
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-experiment" class="md-nav__link">
+    Add an experiment
+  </a>
+  
+    <nav class="md-nav" aria-label="Add an experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upload-failed" class="md-nav__link">
+    Upload failed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selecting-experiments" class="md-nav__link">
+    Selecting experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-formats" class="md-nav__link">
+    Import formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Import formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pilot" class="md-nav__link">
+    Pilot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magellan" class="md-nav__link">
+    Magellan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigmod2021" class="md-nav__link">
+    Sigmod2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterer" class="md-nav__link">
+    ClusterER
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="experiments">Experiments</h1>
+<p>A dataset can consist of multiple experiments. An experiment is thereby considered as a single run of a matching
+solution which produces an output set. To ease the workflow, experiments have to be labeled with the matching
+solution that was used. The description can contain additional information on how this exact result was achived - e.g.
+a list of configuration parameters, or the time spent labeling data.</p>
+<p><img alt="Screenshot2" src="../../assets/experiments-overview.png" title="Experiment selector" /></p>
+<h2 id="add-an-experiment">Add an experiment</h2>
+<ol>
+<li>
+<p>Select a dataset.</p>
+</li>
+<li>
+<p>Open page "Experiments" from the sidebar on the left.</p>
+</li>
+<li>
+<p>Add a new experiment with the "+" button in the lower left corner of the screen.</p>
+</li>
+<li>
+<p>Specify a short and concise name, as well as a detailed description.</p>
+</li>
+<li>
+<p>Select a file containing the result set and choose the correct import format. <em>(see below)</em></p>
+</li>
+<li>
+<p>Click on "Add experiment" - this process may take several minutes to complete as indexes have to be created!</p>
+</li>
+</ol>
+<h3 id="upload-failed">Upload failed</h3>
+<p>Since creating the experiment and uploading its contents are two separate steps, you may receive an error message stating
+that the file upload failed. In this case, the experiment itself was created (most likely) empty with no pairs.
+In this case, simply delete the experiment and start over again.</p>
+<h2 id="selecting-experiments">Selecting experiments</h2>
+<p>You can select experiments to use for the further workflow steps by clicking on the gray square of each experiment card.
+Within the side menu on the left, you can then see the order in which the experiments will be used.</p>
+<blockquote>
+<p>For now, you'll have to select the experiment used as a <strong>gold standard</strong> in the following steps with <code>1.</code> - this is compulsory!</p>
+</blockquote>
+<h2 id="import-formats">Import formats</h2>
+<p>To ease the import process, Snowman understands several file formats out of the box. Those include:</p>
+<h3 id="pilot">Pilot</h3>
+<p>This file format was introduced with the initial prototype and is the easiest available format.</p>
+<p>Result sets can be uploaded as (comma-separated) csv files in <strong>UTF-8</strong> encoding. We expect the csv file to have <code>,</code>
+as split character, <code>"</code> as quote character and <code>'</code> as escape character.</p>
+<p>The importer expects the csv to have the columns <code>p1</code> and <code>p2</code>. They should store the ids of the respective
+dataset tuples.</p>
+<p>The csv optionally can have a column named "prediction" which contains a <code>1</code> in case the pair was detected as duplicate -
+<code>0</code> otherwise. If this column is not present we assume that all listed tuples have been detected as duplicates
+(think: we automatically insert a column "prediction" and fill it with the value <code>1</code> everywhere).</p>
+<p>Following this, more columns may be specified with arbitrary content. See the following example:</p>
+<pre><code class="language-csv">p1,p2,prediction,feat1,feat2,feat3,sum
+2,1,1,0.3,0.4,0.4,2
+1,2,1,0.3,0.4,0.4,2
+4,3,1,0.3,0.4,0.4,2
+3,4,1,0.3,0.4,0.4,3
+6,5,1,0.3,0.5,0.4,3
+5,6,1,0.3,0.5,0.4,3
+8,7,1,0.3,0.5,0.4,2
+7,8,1,0.3,0.5,0.4,2
+10,9,1,0.3,0.5,0.4,2
+9,10,1,0.3,0.4,0.4,2
+12,11,1,0.3,0.4,0.4,2
+11,12,1,0.3,0.4,0.4,8
+14,13,1,0.3,0.4,0.4,8
+13,14,1,0.3,0.4,0.4,8
+16,15,1,0.3,0.4,0.4,8
+15,16,1,0.3,0.4,0.4,2
+...
+</code></pre>
+<h3 id="magellan">Magellan</h3>
+<p>The open-source matching solution Magellan is widely used in research. We support its result set file format out of the box.</p>
+<pre><code class="language-csv">,_id,ltable_id,rtable_id,id_id_exm,id_id_anm,id_id_lev_dist,id_id_lev_sim,name_name_jac_qgm_3_qgm_3,name_name_cos_dlm_dc0_dlm_dc0,name_name_jac_dlm_dc0_dlm_dc0,name_name_mel,name_name_lev_dist,name_name_lev_sim,name_name_nmw,name_name_sw,addr_addr_jac_qgm_3_qgm_3,addr_addr_cos_dlm_dc0_dlm_dc0,addr_addr_jac_dlm_dc0_dlm_dc0,addr_addr_mel,addr_addr_lev_dist,addr_addr_lev_sim,addr_addr_nmw,addr_addr_sw,city_city_jac_qgm_3_qgm_3,city_city_cos_dlm_dc0_dlm_dc0,city_city_jac_dlm_dc0_dlm_dc0,city_city_mel,city_city_lev_dist,city_city_lev_sim,city_city_nmw,city_city_sw,type_type_jac_qgm_3_qgm_3,type_type_cos_dlm_dc0_dlm_dc0,type_type_jac_dlm_dc0_dlm_dc0,type_type_mel,type_type_lev_dist,type_type_lev_sim,type_type_nmw,type_type_sw,gold,predicted
+124,2054,598,283,0,0.47324414715719065,3,0.0,1.0,1.0,1.0,1.0,0.0,1.0,11.0,11.0,0.21739130434782608,0.40824829046386296,0.2222222222222222,0.7647619247436523,30.0,0.25,-16.0,9.0,0.47058823529411764,0.8164965809277259,0.6666666666666666,0.9230769276618958,5.0,0.6153846153846154,3.0,8.0,0.0,0.0,0.0,0.4991452991962433,11.0,0.15384615384615385,-6.0,1.0,1,1
+54,768,739,115,0,0.15561569688768606,3,0.0,0.1111111111111111,0.40824829046386296,0.25,0.5292929410934448,12.0,0.19999999999999996,-1.0,4.0,0.14814814814814814,0.2886751345948129,0.16666666666666666,0.5842490792274475,9.0,0.3571428571428571,4.0,4.0,0.47058823529411764,0.8164965809277259,0.6666666666666666,0.9230769276618958,5.0,0.6153846153846154,3.0,8.0,0.0,0.0,0.0,0.0,6.0,0.0,-2.0,1.0,0,0
+268,1736,1046,246,0,0.23518164435946465,2,0.5,0.058823529411764705,0.33333333333333337,0.2,0.5309057235717773,15.0,0.11764705882352944,0.0,4.0,0.06896551724137931,0.0,0.0,0.6170329451560974,10.0,0.2857142857142857,3.0,4.0,0.0,0.0,0.0,0.5897436141967773,10.0,0.23076923076923073,2.0,3.0,0.3,0.7071067811865475,0.5,0.875,10.0,0.375,-4.0,6.0,0,0
+293,618,888,78,0,0.08783783783783783,2,0.33333333333333337,0.2,0.4999999999999999,0.3333333333333333,0.6702020168304443,9.0,0.4,2.0,5.0,0.10810810810810811,0.22360679774997896,0.125,0.510185182094574,17.0,0.29166666666666663,-2.0,6.0,0.47058823529411764,0.8164965809277259,0.6666666666666666,0.9230769276618958,5.0,0.6153846153846154,3.0,8.0,0.0,0.0,0.0,0.5777778029441833,6.0,0.0,-1.0,1.0,0,0
+230,486,866,66,0,0.07621247113163976,1,0.6666666666666667,0.18181818181818182,0.35355339059327373,0.2,0.35333332419395447,18.0,0.28,-8.0,6.0,0.02857142857142857,0.0,0.0,0.4783068895339966,14.0,0.2222222222222222,0.0,2.0,0.0,0.0,0.0,0.4611110985279083,13.0,0.1333333333333333,-5.0,1.0,0.0,0.0,0.0,0.5138888955116272,7.0,0.125,-2.0,2.0,0,0
+134,2079,599,284,0,0.4741235392320534,3,0.0,1.0,1.0,1.0,1.0,0.0,1.0,17.0,17.0,1.0,1.0,1.0,1.0,0.0,1.0,14.0,14.0,0.47058823529411764,0.8164965809277259,0.6666666666666666,0.9230769276618958,5.0,0.6153846153846154,3.0,8.0,0.4444444444444444,0.7071067811865475,0.5,0.9142857193946838,6.0,0.5714285714285714,2.0,8.0,1,1
+12,391,905,48,0,0.053038674033149213,3,0.0,0.19230769230769232,0.40824829046386296,0.25,0.6499999761581421,9.0,0.4,3.0,6.0,0.023809523809523808,0.0,0.0,0.47883597016334534,18.0,0.1428571428571429,0.0,2.0,0.0,0.0,0.0,0.5416666865348816,9.0,0.25,-1.0,3.0,0.4444444444444444,0.7071067811865475,0.5,0.7321428656578064,6.0,0.5714285714285714,2.0,8.0,0,0
+423,1450,758,209,0,0.2757255936675461,3,0.0,0.21875,0.35355339059327373,0.2,0.5888888835906982,12.0,0.4,3.0,7.0,0.07692307692307693,0.0,0.0,0.5629629492759705,11.0,0.2666666666666667,-2.0,4.0,0.0,0.0,0.0,0.5352563858032227,12.0,0.07692307692307687,-4.0,2.0,0.0,0.0,0.0,0.4833333194255829,8.0,0.19999999999999996,0.0,2.0,0,0
+272,248,797,33,0,0.04140526976160597,3,0.0,0.20833333333333334,0.40824829046386296,0.25,0.6168830990791321,8.0,0.4285714285714286,3.0,6.0,0.2,0.5,0.3333333333333333,0.7516340017318726,9.0,0.47058823529411764,6.0,7.0,0.0,0.0,0.0,0.0,8.0,0.0,-6.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,8.0,8.0,0,0
+...
+</code></pre>
+<h3 id="sigmod2021">Sigmod2021</h3>
+<p>See <a href="https://dbgroup.ing.unimore.it/sigmod21contest/task.shtml">here</a>.</p>
+<h3 id="clusterer">ClusterER</h3>
+<p>This is an internal file format.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../datasets/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Datasets
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../benchmark/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Benchmark
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.f5903571.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3981fc68.min.js"></script>
+      
+    
+  </body>
+</html>
