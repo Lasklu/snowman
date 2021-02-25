@@ -16,6 +16,8 @@ jobs:
       matrix:
         # Select platform(s)
         os: [ ubuntu-latest, macos-latest, windows-latest ]
+    env:
+      prerelease: ${{ github.ref != 'refs/heads/master' }}
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -46,21 +48,45 @@ jobs:
       - name: Release stack
         run: npm run release
         working-directory: ./
-      - name: Upload artifact (Windows)
-        uses: actions/upload-artifact@v2
+      - name: Get current time
+        uses: 1466587594/get-current-time@v1
+        id: current-time
         with:
-          name: snowman-win.zip
-          path: ./wrapper/build/*.zip
-        if: matrix.os == 'windows-latest'
-      - name: Upload artifact (MacOS)
-        uses: actions/upload-artifact@v2
+          format: YYYYMMDD-HHmmss
+          utcOffset: "+01:00"
+      - name: Generate release name
+        uses: haya14busa/action-cond@v1
+        id: tag_prefix
         with:
-          name: snowman.dmg
-          path: ./wrapper/build/*.dmg
-        if: matrix.os == 'macos-latest'
-      - name: Upload artifact (Linux)
-        uses: actions/upload-artifact@v2
+          cond: ${{ env.prerelease }}
+          if_true: "Trunk"
+          if_false: ""
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: snowman-lnx.zip
-          path: ./wrapper/build/*.zip
-        if: matrix.os == 'ubuntu-latest'
+          tag_name: ${{ steps.tag_prefix.outputs.value }}${{ steps.current-time.outputs.formattedTime }} 
+          release_name: ${{ steps.current-time.outputs.formattedTime }}
+          draft: false
+          prerelease: ${{ env.prerelease }}
+      - name: Upload ReleaseMac
+        id: upload-release-asset-macOS
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ./wrapper/build/*.dmg
+          asset_name: snowman.dmg   
+      - name: Upload Release Asset
+        id: upload-release-asset-mac
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: /home/runner/.smalltalkCI/_builds/TelegramClient.sar
+          asset_name: snowman.
+          asset_content_type: application/zip
